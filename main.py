@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import random
+import matplotlib_fontja
 
 # --- バージョン情報 ---
 __version__ = "0.1.0-beta.1"
