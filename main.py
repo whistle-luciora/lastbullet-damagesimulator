@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import random
-import japanize_matplotlib
+import matplotlib_fontja
 
 # --- バージョン情報 ---
 __version__ = "0.1.0-beta.1"
@@ -349,10 +349,10 @@ def run_multiple_simulations_for_params(
     selected_attack_subtype, selected_breakthrough_multiplier_rate, selected_attribute,
     selected_attack_category_label, memoria_aux_data_list,
     legendary_amplification_per_attribute_totals,
-    lily_role_selection_label, lily_role_correction_rate, # リリィ役職設定
-    lily_aux_prob_amp_per_attribute_totals, selected_aux_prob_amp_element, # リリィ補助スキル確率増幅 (全属性の値)
-    lily_attribute_selection, lily_attribute_correction_multiplier, # リリィ属性補正
-    charm_rates, order_rate, counter_rate, theme_rates, # order_rate は単一値
+    lily_role_selection_label, lily_role_correction_rate,
+    lily_aux_prob_amp_per_attribute_totals, selected_aux_prob_amp_element,
+    lily_attribute_selection, lily_attribute_correction_multiplier,
+    charm_rates, order_rate, counter_rate, theme_rates,
     grace_active, neunwelt_active,
     stack_meteor_active, stack_barrier_active,
     critical_active, opponent_costume_attribute, opponent_costume_reduction_rate
@@ -924,6 +924,7 @@ with st.expander("免責事項", expanded=False):
 # ・ダメージ処理の高速化(Numpy乱数による処理？)
 # ・st.formで再実行を抑制
 # ↓コードとは無関係
+# ・ドメイン決める（lastbullet-damagesimulator）
 # ・更新履歴（githubで書く）
 # ・Discordサーバー立てる
 # ・お題箱の準備
